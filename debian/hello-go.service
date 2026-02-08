@@ -2,7 +2,7 @@
 Description=Hello Go Service
 
 [Service]
-ExecStart=/usr/local/bin/hello-go
+ExecStart=/usr/bin/hello-go
 Restart=always
 User=root
 
