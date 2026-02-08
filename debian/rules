@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+%:
+    dh $@
+
+override_dh_auto_build:
+    go build -o hello-go
+
+override_dh_install:
+    dh_install
+    install -D -m 644 debian/hello-go.service $(CURDIR)/debian/hello-go/lib/systemd/system/hello-go.service

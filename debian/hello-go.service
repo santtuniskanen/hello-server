@@ -1,0 +1,10 @@
+[Unit]
+Description=Hello Go Service
+
+[Service]
+ExecStart=/usr/local/bin/hello-go
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target

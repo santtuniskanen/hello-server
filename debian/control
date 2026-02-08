@@ -1,0 +1,10 @@
+Source: hello-go
+Section: misc
+Priority: optional
+Maintainer: Santtu Niskanen <santtuniska02@gmail.com>
+Build-Depends: debhelper-compat (= 13), golang-any
+Standards-Version: 4.5.1
+
+Package: hello-go
+Architecture: amd64
+Description: Simple Go Hello World systemd service
